@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Document</title>
+      <style>
+          ul{
+              list-style: none;
+          }
+         .nav>li{
+             float: left;
+         }
+         ul a{
+             display: block;
+             text-decoration: none;
+             width: 100px;
+             height: 50px;
+             text-align: center;
+             line-height: 50px;
+             color: black;
+             background-color: white;
+         }
+         .drop-down{
+             /*position: relative;*/
+         }
+         .drop-down-content{
+             padding: 0;
+             display: none;
+             /*position: absolute;*/
+         }
+         
+         h3{
+             font-size: 30px;
+             clear: both;
+         }
+         .drop-down-content li:hover a{
+             color:#ff5a00;
+         }
+         .nav .drop-down>a:hover{
+         	color: #ff5a00;
+         	background-color: #777
+         }
+         .nav .drop-down:hover .drop-down-content{
+             display: block;
+         }
+         .nav .drop-down:hover .drop-down-content li:hover a{
+         	color: white;
+         	background-color: #ff5a00
+         }
+ </style>
+ </head>
+ <body>
+     <ul class="nav">
+         <li class="drop-down"><a href="#" style="font-weight: bold;">9.9疯抢</a>
+             <ul class="drop-down-content">
+                 <li><a href="#">9.9包邮</a></li>
+                 <li><a href="#">20元封顶</a></li>
+                 <li><a href="#">50元好货</a></li>
+             </ul>
+             </li>
+     </ul>
+     <h3>我是测试文字</h3>
+ </body>
+ </html>
